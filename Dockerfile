@@ -14,7 +14,7 @@ RUN update-locale LANG=en_US.UTF-8
 RUN apt-get update && apt-get install -y wget software-properties-common
 
 RUN add-apt-repository ppa:jonathonf/ffmpeg-4 -y
-RUN add-apt-repository ppa:rmescandon/yq -y
+RUN LC_ALL=C.UTF-8 add-apt-repository ppa:rmescandon/yq -y
 RUN apt-get update && apt-get -y dist-upgrade
 
 # -- Setup tomcat7 to run under docker
