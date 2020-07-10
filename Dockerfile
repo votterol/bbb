@@ -67,3 +67,4 @@ ADD mod/external.xml          /opt/freeswitch/conf/sip_profiles/external.xml
 ADD setup.sh /root/setup.sh
 ENTRYPOINT ["/root/setup.sh"]
 CMD []
+EXPOSE 80 1935 3478
